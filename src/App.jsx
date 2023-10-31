@@ -1,6 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { Home } from "./views/Home/Home";
-import "./app.css";
+import "./App.css";
 import { ParallaxProvider } from "react-scroll-parallax";
 import 'animate.css';
 

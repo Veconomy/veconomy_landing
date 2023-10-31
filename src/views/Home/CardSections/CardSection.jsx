@@ -23,7 +23,7 @@ export const CardSection = () => {
   ];
 
   return (
-    <Flex w="100%" bg="#FFFAFB" alignItems="center" justifyContent="center">
+    <Flex w="100%" bg="#2C1E4A" alignItems="center" justifyContent="center">
       {cards.map((card) => {
         return (
           <Flex

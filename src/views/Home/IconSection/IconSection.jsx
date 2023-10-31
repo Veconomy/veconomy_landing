@@ -29,7 +29,7 @@ export const IconSection = () => {
 
   return (
     <Flex
-      m="4em"
+      m="2em"
       bg="#FFFAFB"
       w="100%"
       h="14em"
