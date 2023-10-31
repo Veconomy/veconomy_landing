@@ -7,7 +7,7 @@ import {
   Highlight,
 } from "@chakra-ui/react";
 import { Navbar } from "../../components/navbar/Navbar";
-import banner1 from "../../assets/banner2.png";
+import banner1 from "../../assets/banner2_prueba.png";
 import "@splidejs/react-splide/css/skyblue";
 import { CardSection } from "./CardSections/CardSection";
 import { IconSection } from "./IconSection/IconSection";
@@ -17,6 +17,7 @@ import { TypeAnimation } from "react-type-animation";
 import valoresVector from "../../assets/valores_vector.png";
 import vector_veconomy from "../../assets/infografico.png";
 import rombo from "../../assets/rombo.png"
+import { InvestmentSection } from "./InvestmentSection/InvestmentSection";
 
 
 export const Home = () => {
@@ -38,7 +39,7 @@ export const Home = () => {
         backgroundSize="cover"
       >
         <Flex alignItems="center" justifyContent="center">
-          <Image  ml="9.5em" src={rombo}/>
+          <Image   ml="9.5em" src={rombo}/>
         <Text fontSize="2em">
           Crowdlending
         </Text>
@@ -58,21 +59,6 @@ export const Home = () => {
           accessible and help you <br />
           master new services
         </Text>
-        {/* <TypeAnimation
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        `Economia colaborativa ,inclusión financiera`,
-        5000, 
-        "Economia colaborativa,inclusión global",
-        5000,
-        "Economia colaborativa,inclusión selectiva",
-        5000
-      ]}
-      wrapper="span"
-      speed={50}
-      style={{ marginLeft:"3em",fontSize: '3.5em', width:"15em" , color:"black",textAlign:"center", display: 'inline-block' }}
-      repeat={Infinity}
-    /> */}
         <Button
           ml="10em"
           _hover={{ color: "black", bg: "#00C2CB" }}
@@ -88,6 +74,7 @@ export const Home = () => {
       </Flex>
       <IconSection />
       <CardSection />
+      <InvestmentSection/>
       <ProyectosCard />
       <Flex
         p="1em"

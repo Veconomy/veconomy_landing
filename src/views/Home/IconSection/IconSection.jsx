@@ -29,10 +29,9 @@ export const IconSection = () => {
 
   return (
     <Flex
-      m="2em"
       bg="#FFFAFB"
       w="100%"
-      h="14em"
+      h="10em"
       alignItems="center"
       justifyContent="center"
       direction="column"
@@ -53,12 +52,13 @@ export const IconSection = () => {
               direction="column"
               justifyContent="center"
               w="100%"
+             
             >
-              <Image h="5em" src={icon.img} />
-              <Text fontSize="2em" fontWeight="bolder">
+              <Image h="3em" src={icon.img} />
+              <Text h="1.5em" fontSize="2em" fontWeight="bolder">
                 {icon.stat}
               </Text>
-              <Text fontSize="1.2em" textAlign="center">
+              <Text h="1.5em" fontSize="1.2em" textAlign="center">
                 {icon.title}
               </Text>
             </Flex>
