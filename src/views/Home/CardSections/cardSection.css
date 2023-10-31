@@ -1,0 +1,7 @@
+
+
+.cardSection {
+    filter: contrast(85%) drop-shadow(-8px 8px 17px rgba(16,7,7,0.71));
+-webkit-filter: contrast(85%) drop-shadow(-8px 8px 17px rgba(16,7,7,0.71));
+-moz-filter: contrast(85%) drop-shadow(-8px 8px 17px rgba(16,7,7,0.71));
+}
