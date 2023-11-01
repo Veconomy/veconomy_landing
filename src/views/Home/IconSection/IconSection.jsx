@@ -1,9 +1,6 @@
 import {
   Flex,
   Text,
-  Heading,
-  Button,
-  Highlight,
   Image,
 } from "@chakra-ui/react";
 import apoyo_logo from "../../../assets/apoyo_logo.png";
@@ -29,9 +26,10 @@ export const IconSection = () => {
 
   return (
     <Flex
+
       bg="#FFFAFB"
       w="100%"
-      h="12em"
+      h="10em"
       alignItems="center"
       justifyContent="center"
       direction="column"

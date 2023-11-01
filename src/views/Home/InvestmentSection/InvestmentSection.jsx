@@ -3,7 +3,7 @@ import { InvestmentCard } from "./InvestmentCard/InvestmentCard";
 
 export const InvestmentSection = () => {
   return (
-    <Flex w="80%" h="40em" bg="#00C2CB" alignItems="center" justifyItems="center">
+    <Flex w="100%" h="40em" bg="#00C2CB" alignItems="center" justifyItems="center">
       <Flex
         alignItems="center"
         justifyContent="space-around"

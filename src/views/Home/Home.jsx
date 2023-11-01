@@ -7,7 +7,7 @@ import {
   Highlight,
 } from "@chakra-ui/react";
 import { Navbar } from "../../components/navbar/Navbar";
-import banner1 from "../../assets/banner2_prueba.png";
+import banner1 from "../../assets/banner4_prueba.png";
 import "@splidejs/react-splide/css/skyblue";
 import { CardSection } from "./CardSections/CardSection";
 import { IconSection } from "./IconSection/IconSection";
@@ -39,8 +39,8 @@ export const Home = () => {
         backgroundSize="cover"
       >
         <Flex alignItems="center" justifyContent="center">
-          <Image   ml="9.5em" src={rombo}/>
-        <Text fontSize="2em">
+          <Image   ml="10em" h="3em" src={rombo}/>
+        <Text fontSize="2em" color="black">
           Crowdlending
         </Text>
         </Flex>
@@ -61,9 +61,10 @@ export const Home = () => {
         </Text>
         <Button
           ml="10em"
-          _hover={{ color: "black", bg: "#00C2CB" }}
-          bg="#001d45"
-          color="white"
+          _hover={{ color: "white", bg: "#00C2CB" }}
+          /* bg="#001d45" */
+          bg="#00C2CB"
+          color="black"
           borderRadius="30px"
           w="16em"
           h="3em"

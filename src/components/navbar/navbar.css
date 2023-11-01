@@ -8,10 +8,8 @@
     left: 0;
     right: 0;
     z-index: 1000;
-   
     background-size: cover;/* Color de fondo de la barra de navegación */
     padding: 10px;
-    border-radius: 0 0 30px 30px; /* Aplica bordes en la parte inferior */
     transition: top 0.5s; /* Agrega una transición suave en la propiedad "top" */
     transition: border-radius 0.5s; /* Agrega una transición suave en la propiedad "top" */
     transition: background-color 0.8s; /* Agrega una transición suave en la propiedad "top" */

@@ -1,8 +1,8 @@
 import { Button, Flex, Text } from "@chakra-ui/react";
 import inversores_card from "../../../assets/inversores-card.png";
 import nosotros_card from "../../../assets/nosotros-card.png";
-import emprendedores_card from "../../../assets/emprendedores-card.jpg";
-import "./cardSection.css"
+import emprendedores_card from "../../../assets/emprendedores-card.png";
+import "./cardSection.css";
 export const CardSection = () => {
   const cards = [
     {
@@ -23,13 +23,20 @@ export const CardSection = () => {
   ];
 
   return (
-    <Flex w="100%" h="40em" pt="2em" bg="#FFFAFB" alignItems="center" justifyContent="center">
+    <Flex
+      w="100%"
+      h="40em"
+      pt="2em"
+      //bg="#FFFAFB"
+      //bg="#001d45"
+      alignItems="center"
+      justifyContent="center"
+    >
       {cards.map((card) => {
         return (
           <Flex
             className="animate__animated animate__animated cardSection"
             filter="saturate(50%)"
-            bgColor="rgba(0, 0, 255, 0.5)"
             direction="column"
             alignItems="center"
             justifyContent="center"
@@ -38,8 +45,10 @@ export const CardSection = () => {
             bgImage={card.img}
             bgSize="cover"
             h="30em"
-            w="24em"
+            w="29em"
+            style={{ position: "relative" }}
           >
+           
             <Text fontSize="2em" color="white">
               {card.title}
             </Text>
