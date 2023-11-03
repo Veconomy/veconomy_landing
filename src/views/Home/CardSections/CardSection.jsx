@@ -1,64 +1,60 @@
-import { Button, Flex, Text } from "@chakra-ui/react";
-import inversores_card from "../../../assets/inversores-card.png";
-import nosotros_card from "../../../assets/nosotros-card.png";
-import emprendedores_card from "../../../assets/emprendedores-card.png";
+import { Button, Center, Divider, Flex, Text } from "@chakra-ui/react";
 import "./cardSection.css";
+import { Cards } from "./cards/Cards";
 export const CardSection = () => {
-  const cards = [
-    {
-      img: nosotros_card,
-      title: "Sobre nosotros",
-      sub: "Iniciativas sociales ,innovación y transparencia",
-    },
-    {
-      img: emprendedores_card,
-      title: "Ayuda a emprendedores",
-      sub: "Economía colaboratíva, fácil financiación.",
-    },
-    {
-      img: inversores_card,
-      title: "Nuestros inversores",
-      sub: "Colaboración solidaria, proyectos con propósito.",
-    },
-  ];
-
   return (
     <Flex
-      w="100%"
-      h="40em"
-      pt="2em"
-      //bg="#FFFAFB"
-      //bg="#001d45"
+      direction="column"
+      pt="3em"
       alignItems="center"
       justifyContent="center"
+      bg="#FFFAFB"
+      w="100%"
     >
-      {cards.map((card) => {
-        return (
+      <Flex alignItems="center" w="100%" justifyContent="center">
+        <Flex direction="column">
           <Flex
-            className="animate__animated animate__animated cardSection"
-            filter="saturate(50%)"
-            direction="column"
-            alignItems="center"
+            ml="4em"
+            bg="grey"
+            w="8em"
             justifyContent="center"
-            borderRadius="50px"
-            m="2em"
-            bgImage={card.img}
-            bgSize="cover"
-            h="30em"
-            w="29em"
-            style={{ position: "relative" }}
+            color="white"
+            borderRadius="20px"
           >
-           
-            <Text fontSize="2em" color="white">
-              {card.title}
-            </Text>
-            <Text fontSize="1em" color="white">
-              {card.sub}
-            </Text>
-            <Button mt="4em">Conocer más</Button>
+            About we are
           </Flex>
-        );
-      })}
+          <Text fontWeight="bolder" ml="1.4em" fontSize="3em ">
+            Más gente , <br />
+            Mas impacto.
+          </Text>
+        </Flex>
+        <Center ml="15em" mr="4em" height="10em">
+          <Divider orientation="vertical" />
+        </Center>
+
+        <Flex direction="column">
+          <Text fontSize="1.3em" fontWeight="bold">
+            Porque juntos, podemos hacer una real diferencia. <br /> Nuestros
+            servicios de voluntarios en una variedad de <br />
+            roles se adecúan a sus habilidades e interés.
+          </Text>
+          <Button
+            borderRadius="30px"
+            mt="1em"
+            ml="1em"
+            width="50%"
+            color="white"
+            bg="#004199"
+            border="1px solid black"
+            alignSelf="flex-start"
+            justifySelf="center"
+            alignSelf="center"
+          >
+            Leer más
+          </Button>
+        </Flex>
+      </Flex>
+      <Cards />
     </Flex>
   );
 };

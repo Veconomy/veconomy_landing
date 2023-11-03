@@ -1,4 +1,4 @@
-import { Flex, Image, Button , Text} from "@chakra-ui/react";
+import { Flex, Image, Button , Text, Link} from "@chakra-ui/react";
 import logotipo from "../../assets/logotipo.png";
 import globalizacion_logo from "../../assets/globalizacion_logo.png";
 import { navbarScroll } from "../../utils/navbar-scroll";
@@ -21,9 +21,11 @@ export const Navbar = () => {
         <a className="a_navbar" style={{ color: "black", fontSize: "1.2em" }} href="">
           Contáctanos
         </a>
+        <Link href="https://veconomy-app.vercel.app/">
         <Button _hover={{}} className="button_navbar" bg="#001d45" color="white" borderRadius="10px" ml="4em">
           Ingresar
         </Button>
+        </Link>
         <Flex alignItems="center"  justifyContent="center">
          <Text>ESP</Text>
           <ChevronDownIcon boxSize={10}  color="black"/> 

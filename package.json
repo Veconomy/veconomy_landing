@@ -14,14 +14,20 @@
     "@chakra-ui/react": "^2.8.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@react-three/drei": "^9.88.11",
     "@splidejs/react-splide": "^0.7.12",
+    "@vitejs/plugin-react": "^4.1.1",
     "animate.css": "^4.1.1",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-animations": "^1.0.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-scroll-parallax": "^3.4.2",
-    "react-type-animation": "^3.2.0"
+    "react-three-fiber": "^6.0.13",
+    "react-type-animation": "^3.2.0",
+    "three": "^0.158.0",
+    "vite-plugin-gltf": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

@@ -1,0 +1,5 @@
+.investment_card {
+    box-shadow: -9px 10px 37px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -9px 10px 37px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -9px 10px 37px 0px rgba(0, 0, 0, 0.75);
+}

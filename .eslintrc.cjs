@@ -16,5 +16,6 @@ module.exports = {
       'warn',
       { allowConstantExport: false },
     ],
+    'react/jsx-filename-extension': ['error', { 'extensions': ['.jsx', '.js'] }]
   },
 }

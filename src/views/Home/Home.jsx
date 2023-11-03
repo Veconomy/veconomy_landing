@@ -15,9 +15,10 @@ import { ProyectosCard } from "./proyectos_card/ProyectosCard";
 import { Footer } from "../../components/footer/Footer";
 import { TypeAnimation } from "react-type-animation";
 import valoresVector from "../../assets/valores_vector.png";
-import vector_veconomy from "../../assets/infografico.png";
 import rombo from "../../assets/rombo.png"
 import { InvestmentSection } from "./InvestmentSection/InvestmentSection";
+import { Newsletter } from "../../components/newsletter/Newsletter";
+
 
 
 export const Home = () => {
@@ -31,15 +32,15 @@ export const Home = () => {
       <Navbar />
       <Flex
         direction="column"
-        h="40em"
+        h="42em"
         w="100%"
         alignItems="flex-start"
         justifyContent="center"
         bgImage={banner1}
         backgroundSize="cover"
       >
-        <Flex alignItems="center" justifyContent="center">
-          <Image   ml="10em" h="3em" src={rombo}/>
+        <Flex   ml="10em" borderRadius="30px" w="13.5%" bg="white" alignItems="center" justifyContent="center">
+          <Image  h="3em" src={rombo}/>
         <Text fontSize="2em" color="black">
           Crowdlending
         </Text>
@@ -51,8 +52,8 @@ export const Home = () => {
           textAlign="left"
           ml="3em"
         >
-          Economia colaborativa, <br />
-          inclusión financiera
+          Economia <span style={{color:"blue" }}>colaborativa</span>, <br />
+          inclusión <span style={{color:"blue" }}>financiera</span>
         </Heading>
         <Text mt="0.5em" ml="7em" color="black" fontSize="1.5em">
           We make digital professions <br />
@@ -61,9 +62,8 @@ export const Home = () => {
         </Text>
         <Button
           ml="10em"
-          _hover={{ color: "white", bg: "#00C2CB" }}
-          /* bg="#001d45" */
-          bg="#00C2CB"
+          _hover={{ color: "black", bg: "#00C2CB" }}
+           bg="#001d45" 
           color="black"
           borderRadius="30px"
           w="16em"
@@ -73,26 +73,13 @@ export const Home = () => {
           Participar
         </Button>
       </Flex>
-      <IconSection />
       <CardSection />
+      <IconSection />
       <InvestmentSection/>
-      <ProyectosCard />
-      <Flex
-        p="1em"
-        alignItems="center"
-        direction="column"
-        justifyContent="center"
-        w="100%"
-        bg="#161D4B"
-      >
-        {/*  <Image src={valoresVector}/> */}
-        <Text fontSize="5em" color="white">
-          {" "}
-          Veconomy es simple
-        </Text>
-        <Image h="30em" src={vector_veconomy} />
-      </Flex>
+      <ProyectosCard /> 
+      <Newsletter/>
       <Footer />
-    </Flex>
+    </Flex> 
+
   );
 };
