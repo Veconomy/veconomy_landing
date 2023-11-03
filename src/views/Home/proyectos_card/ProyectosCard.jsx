@@ -10,6 +10,8 @@ import {
 import { BiGlobe } from "react-icons/bi";
 import personas_background from "../../../assets/personas_background.jpg";
 import { FaUserFriends } from "react-icons/fa";
+import {TfiInstagram , TfiLinkedin} from "react-icons/tfi"
+import {RiTwitterXLine} from "react-icons/ri"
 export const ProyectosCard = () => {
   const texts = [
     {
@@ -63,7 +65,7 @@ export const ProyectosCard = () => {
         <Divider m="2em 0 " orientation="horizontal" />
         <Flex
           direction="column"
-          h="20em"
+          h="100%"
           alignItems="center"
           justifyContent="space-around"
         >
@@ -102,6 +104,11 @@ export const ProyectosCard = () => {
           <Button w="80%" bg="#004199" color="white" mt="4em" borderRadius="30px" alignSelf="center">
             Ver Proyectos
           </Button>
+          <Flex mt="2em" alignItems="center" justifyContent="space-around" w="70%">
+              <TfiInstagram cursor="pointer" size="3em"/>
+              <RiTwitterXLine cursor="pointer" size="3em"/>
+              <TfiLinkedin cursor="pointer" size="3em"/>
+          </Flex>
         </Flex>
       </Flex>
 

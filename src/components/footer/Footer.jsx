@@ -38,7 +38,7 @@ export const Footer = () => {
     <Flex
       w="100%"
       h="15em"
-      bg="#004199"
+      bg="#4edfff"
       alignItems="center"
       justifyContent="space-around"
     >
@@ -51,7 +51,7 @@ export const Footer = () => {
           w="30%"
         >
           {menu1.map((link) => {
-            return <Link color="white">{link.title || link.sub} </Link>;
+            return <Link color="black">{link.title || link.sub} </Link>;
           })}
         </Flex>
 
@@ -63,7 +63,7 @@ export const Footer = () => {
           w="30%"
         >
           {menu2.map((link) => {
-            return <Link color="white">{link.title || link.sub} </Link>;
+            return <Link color="black">{link.title || link.sub} </Link>;
           })}
         </Flex>
       </Flex>
@@ -76,16 +76,16 @@ export const Footer = () => {
         h="80%"
         w="30%"
       >
-        <Link m="1em" textAlign="right" color="white">
+        <Link m="1em" textAlign="right" color="black">
           Política de Cookies
         </Link>
-        <Link m="1em" textAlign="right" color="white">
+        <Link m="1em" textAlign="right" color="black">
           Política de Privacidad
         </Link>
-        <Link m="1em" textAlign="right" color="white">
+        <Link m="1em" textAlign="right" color="black">
           Términos y Condiciones
         </Link>
-        <Text color="white">Veconomy @2023. Todos los derechos reservados</Text>
+        <Text color="black">Veconomy @2023. Todos los derechos reservados</Text>
       </Flex>
     </Flex>
   );

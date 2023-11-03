@@ -41,12 +41,10 @@ export const CardSection = () => {
           <Button
             borderRadius="30px"
             mt="1em"
-            ml="1em"
             width="50%"
             color="white"
             bg="#004199"
             border="1px solid black"
-            alignSelf="flex-start"
             justifySelf="center"
             alignSelf="center"
           >

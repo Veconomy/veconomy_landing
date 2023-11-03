@@ -64,7 +64,7 @@ export const Home = () => {
           ml="10em"
           _hover={{ color: "black", bg: "#00C2CB" }}
            bg="#001d45" 
-          color="black"
+          color="white"
           borderRadius="30px"
           w="16em"
           h="3em"
