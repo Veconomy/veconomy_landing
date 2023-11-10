@@ -26,14 +26,14 @@ export const IconSection = () => {
     <Flex
       className="icon_container"
       w="100%"
-      h="30em"
+      h="40em"
       alignItems="center"
       justifyContent="center"
       direction="column"
     >
       <Flex
         w="80%"
-        h="80%"
+        h="60%"
         /* bgImage={red_background} */ bg="#4edfff"
         direction="column"
         alignItems="center"
@@ -57,7 +57,7 @@ export const IconSection = () => {
                 justifyContent="center"
                 w="100%"
               >
-                <Image h="5em" src={icon.img} />
+                <Image h="7em" src={icon.img} />
                 <Text
                   h="1.5em"
                   color="black"

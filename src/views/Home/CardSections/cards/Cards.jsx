@@ -1,8 +1,8 @@
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 
-import inversores_card from "../../../../assets/inversores-card.png";
-import nosotros_card from "../../../../assets/nosotros-card.png";
-import emprendedores_card from "../../../../assets/emprendedores-card.png";
+import inversores_card from "../../../../assets/card_inversores.webp";
+import nosotros_card from "../../../../assets/nosotros_card.jpg";
+import emprendedores_card from "../../../../assets/emprendedores_card.jpg";
 
 export const Cards = () => {
   const cards = [
@@ -24,12 +24,18 @@ export const Cards = () => {
       title: "Nuestros inversores",
       sub: "Colaboración solidaria, proyectos con propósito.",
     },
+    {
+      id:3,
+      img: inversores_card,
+      title: "Nuestros inversores",
+      sub: "Colaboración solidaria, proyectos con propósito.",
+    },
   ];
   return (
     <Flex
       w="100%"
-      h="40em"
-      pt="2em"
+      h="30em"
+      cursor="pointer"
       //bg="#FFFAFB"
       //bg="#001d45"
       alignItems="center"
@@ -44,30 +50,29 @@ export const Cards = () => {
           direction="column"
           alignItems="center"
           justifyContent="flex-end"
-          borderRadius="50px"
-          m="2em"
+          borderRadius="20px"
+          m="0 1em"
           bgImage={card.img}
           bgSize="cover"
-          h="30em"
-          w="25em"
+          h="20em"
+          w="20em"
         >
           <Flex
-            borderRadius="50px"
             className="cardText_container"
-            h="10em"
+            h="3em"
             direction="column"
             alignItems="center"
             justifyContent="center"
-            bg="blue"
+            bg="#FFFAFB"
             w="100%"
+            borderRadius="0 0 20px 20px"
           >
-            <Text fontSize="2em" textAlign="center" color="white">
+            <Text fontSize="1.5em" fontWeight="bold" textAlign="center" color="black">
               {card.title}
             </Text>
-            <Text className="cardText" display="none" fontSize="1em" color="white">
+            <Text className="cardText" textAlign="center" display="none" fontSize="1em" color="black">
               {card.sub}
             </Text>
-            <Button mt="2em">Conocer más</Button>
           </Flex>
         </Flex>
         );

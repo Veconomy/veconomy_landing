@@ -1,6 +1,7 @@
-import { Button, Center, Divider, Flex, Text } from "@chakra-ui/react";
+import { Center, Divider, Flex, Text } from "@chakra-ui/react";
 import "./cardSection.css";
 import { Cards } from "./cards/Cards";
+import investment_background from "../../../assets/backprueba.svg"
 export const CardSection = () => {
   return (
     <Flex
@@ -12,7 +13,7 @@ export const CardSection = () => {
       w="100%"
     >
       <Flex alignItems="center" w="100%" justifyContent="center">
-        <Flex direction="column">
+        <Flex direction="column" m="1em">
           <Flex
             ml="4em"
             bg="grey"
@@ -38,21 +39,13 @@ export const CardSection = () => {
             servicios de voluntarios en una variedad de <br />
             roles se adecúan a sus habilidades e interés.
           </Text>
-          <Button
-            borderRadius="30px"
-            mt="1em"
-            width="50%"
-            color="white"
-            bg="#004199"
-            border="1px solid black"
-            justifySelf="center"
-            alignSelf="center"
-          >
-            Leer más
-          </Button>
+         
         </Flex>
       </Flex>
+      <Flex  w="100%" bgImage={investment_background}>
       <Cards />
+      </Flex>
+
     </Flex>
   );
 };

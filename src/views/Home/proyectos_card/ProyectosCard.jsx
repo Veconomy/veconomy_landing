@@ -78,7 +78,7 @@ export const ProyectosCard = () => {
                   <Flex
                     alignItems="center"
                     justifyContent="center"
-                    bg="#004199"
+                    bg="#001d45"
                     h="5em"
                     w="5em"
                     borderRadius="20px"
@@ -101,7 +101,7 @@ export const ProyectosCard = () => {
             );
           })}
 
-          <Button w="80%" bg="#004199" color="white" mt="4em" borderRadius="30px" alignSelf="center">
+          <Button w="80%" bg="#001d45"color="white" mt="4em" borderRadius="30px" alignSelf="center">
             Ver Proyectos
           </Button>
           <Flex mt="2em" alignItems="center" justifyContent="space-around" w="70%">

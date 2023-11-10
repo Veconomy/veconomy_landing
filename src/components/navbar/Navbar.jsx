@@ -4,6 +4,7 @@ import globalizacion_logo from "../../assets/globalizacion_logo.png";
 import { navbarScroll } from "../../utils/navbar-scroll";
 import "./navbar.css"
 import { ChevronDownIcon } from '@chakra-ui/icons'
+import { AnimatedButton } from "../animatedButton/AnimatedButton";
 
 export const Navbar = () => {
   navbarScroll;
@@ -25,6 +26,7 @@ export const Navbar = () => {
         <Button _hover={{}} className="button_navbar" bg="#001d45" color="white" borderRadius="10px" ml="4em">
           Ingresar
         </Button>
+       {/*  <AnimatedButton/> */}
         </Link>
         <Flex alignItems="center"  justifyContent="center">
          <Text>ESP</Text>
